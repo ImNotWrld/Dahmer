@@ -14,7 +14,9 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="css/estilo.css" type="text/css" >
+<link rel="stylesheet" href="style.css" type="text/css" >
+
+<script src="Java.js"></script>
 
 </head>
 
@@ -69,7 +71,7 @@ Aunque se le diagnosticó un trastorno límite de la personalidad,4​ un trasto
 
 El 28 de noviembre de 1994, Dahmer fue asesinado a golpes por Christopher Scarver, un compañero de prisión en la Institución Correccional de Columbia en Portage, Wisconsin.
 
-</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Jeffrey_Dahmer_HS_Yearbook.jpg/220px-Jeffrey_Dahmer_HS_Yearbook.jpg" alt=""></section>
+</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Jeffrey_Dahmer_HS_Yearbook.jpg/220px-Jeffrey_Dahmer_HS_Yearbook.jpg" id="dahmer" onclick="jefery()"></section>
 
 <section id="movies"><h1>
     Peliculas De Dahmer
@@ -98,5 +100,6 @@ xNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAQwAvAMBIgACEQEDEQH/xAAbAAABBQE
     informacion de Dahmer
 </h1><p>
      Fue Un asesino en serie canival conocido por el año 1890
-</p><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHAAfAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBQIEBgEHAP/EADQQAAIBAwIDBgMIAgMAAAAAAAECAwAEERIhBTFBEyJRYXGBBjKRFCNSobHB0fBC4RUzYv/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EAB8RAQEAAgIDAAMAAAAAAAAAAAABAhEhMQNBURIiMv/aAAwDAQACEQMRAD8ArXg71LpuVNLwb0tkFeM7yu4WqOjJpncLVRFGa0iagIhRFiFGRRRVUU9kAIRUhEKsBRUgoo2elfshXREKPgV0AUbGgeyFTWHOwBPpXZpY4E1OfQdSaDZG4v3YxskcX43HdHtzP6UbGlpoYYY+0uriCFR0d8sfRRvXFSJz3CxB5akC59BnNXobC0hbCFrm4J3kYBT7DYAeVNpNNpbhWJjY9dYX884qLn8XMWYIhD6WIVj47V80UYO7Cg8akuJAeykDqdtnU/oWFZaR7yFiveUeGk1tjPyjPL9Xp14N6Wyimd3zpdLXO0Lbkc6X6sMaZXI50sK941pimjq9FV6AiUYRmmQgcVISVARmuiOgJaxUu0FREZr4x4BNBl1yftFxlsFQMKM4yP7uaY8Ncspc6seYwvqBSexia4Z2z8uNjTPh8jS3iwkgHB059PCpz54Vif8AD76GO4ZIo0kdf+xywGn9h6VO4sy8mqK8SMsc4T7xj6FqSXtqbK7js7dPvFIMaE7Asfmbx8fr5VODjVxDJ2EYWSQnDMkekt9CKnXxXI/ETxSSTQmpVHdSJURmbzY4wBSKW2kVyLm8gWTqOxzj1xWzs7gTRZmjRwm2qSTSo8cAD+PU0kvTP2qtC0UUTKGRVgB7p5darHKpsPbvnS2QU0uxvS2Qb1BqF0NjSo/Oab3Q2NKG+c1eKasR0ZaDHyoy1RCCpVEVKkH1BvZTDZzSAZKodqNS34gz/wAeyBiuphuP75U8e4L0V2Wp4T2kDSCMYLq+D9Kt20klnKl0gIKNtnrg8qQ2ktzbXSskmhx1XpWnt3W6XVeTqv4cp19BWnlmh4+e2hhNvxqATW7CO7UYIJ3x0/Kj3fDmgtiUGXduanYk/wBNZqCJkl1WxaU5+ZFPPpWlsLy5SER3aOEG41KSRj2rnuLpxKrqF2hMCg4UYOPM5P1xVZrU3YWSRiDjHtk01hvlhnkdlJjbONKk0uWWePKIyaQdtZwcU5KV1GmuedLptudMrnnS2flUsSq7uMHnS8nU21D4tLokzmgW02utZOE2mkdGWq6Haig0gKpqVDBzUqAkWqjxYFrUhULeY6edfTz6Dgc6Etw7A93IOxpyextn7VWe8VnG9XLu3uUYqAVTGQQdiKLLD2coYbe1MLO6AxGyB1wQR4j/AFWlz3TxxZiVZR3Vd98hxnY1c4fdXquIxcXXZL/jHIf5FPrjhsBBedjHEfLJqx8P2qvcrLDC5tY2wrcgW8fb96d8vHQnisy3sk49cSGTVCLiLGAA5H7Md6RSCRnJ3fPUnevRvja3WRY5wmsIPvCPwn/dZpOEJKoeJ8oeWw/mnh5JMei8nitrZR8Vgu2wh39a5ONtqxdnK1tKpLbZ3rXrdQzW40tk46VhlhrpUt9svx1e+ap2HOr3HN3NUrHnVz+WeXZunKiA0JKKtQoRaJ0oS0TNBlt3jtN6JA8arlmG9Dvd2qmw2qtJMLiaB4WVSpJ5VTtpAsoyMiq8SHWM8hU1Olip6GnpeJpFaz8WbLyFIx18KqcU7fh8xt7a5cQR7oudvHP1zXJbmcKkFscZ5noKr30l3pxcTxrpPy6c5oxlaXKacsHmvb+OK6uXKtkHfoRVybhk1tIY0fUvMGk8Mt0smqN1JIxyxV2Li1wEAfBI65qspfSJlPYJfIqzw+5MbEId6oIu1TjRw47NsE0WDdXeIF5UzpJPlQ7OGVcExtj0rrz3VuCS6t7UW34tc43jz6ml6TrG3mriqfA1MHHSr3DhxO9QPHYSMh640j6mnsHw88uDcMsZ8FGr8+VQq4ye2XVuXnXXlVB3iBWzj+HLCPBeJ5D/AO32PsKYR2tvEAsdvEoHQIKEbeYtbXl069hazOG5EIcfWjNwS+jYJPGEJ6Zya9N+bc7kcqq3kIkTOMkDY0rboY63y83e0aDIIG3hVSeMEZ61o+LRaWYePKkNwMDFKWtspNKiSa3CFtDdM1K6soYwGluQxPRahIoljz1zzqjOsinBbIrbGbZW64WBa25gMiT6SP8AE9RVTTq3DYHTFfLHtkirlvDmP3qrdI1tA1ONt6rhxzrqyAGlpezOOH7V3NehMZZgM4ArcfDnC+Gx2qXEFrqbo0u7e/h7VluC2puIxI+RF+Aba9/0rX8Mnf7Q0WMKy5X1H9/Ks78LR8rg75omfClxk0tvR0mA3PKpCznFcZx4UISBuXKunB3pkkTioMQa5nNcZsDflSPRTxWxW4iLov3i/nWE4iCk7KRg+HhXpUsSygkEqT1FZjj3BGYNMp1HxG1KcL/K60xJl0ZXxoLNk1YuLZgdwQaEtuxNbyxF5cq5byaI8edCSAjc1IkDbSTU2iTT/9k=" alt="">
-<button><a href="Dentro-del-Monstruo.zip" download="Dentro-del-Monstruo.zip">Libro</a></button></section>
+</p><button><a href="Dentro-del-Monstruo.zip" download="Dentro-del-Monstruo.zip">Libro</a></button></section>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_WADsHshyrknUXduE92hbthRFBY_3ua7EZQ&usqp=CAU" onclick="dahmer()" id="jeffrey">
